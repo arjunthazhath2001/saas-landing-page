@@ -8,7 +8,6 @@ import Youtube from '@/assets/social-youtube.svg'
 
 
 
-
 export const Footer = () => {
   return (
     <footer className="bg-black py-10">

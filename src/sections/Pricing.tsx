@@ -84,7 +84,7 @@ export const Pricing = () => {
 
                   {popular===true && (
                     <div className="inline-flex text-sm py-1.5 px-4 rounded-xl border border-white/20">
-                      <span className="bg-[linear-gradient(to_right,pink,blue,yellow,green)] text-transparent bg-clip-text font-medium">
+                      <span className="bg-[linear-gradient(to_right,pink,skyblue,yellow,green)] text-transparent bg-clip-text font-medium">
                         Popular
                       </span>
                     </div>
