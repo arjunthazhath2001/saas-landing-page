@@ -21,4 +21,7 @@
   @apply h-8 w-auto;
 }
 
+.tag{
+  @apply px-3 rounded-lg py-1 text-sm border border-black/40 inline-flex tracking-tight;
+}
 }
