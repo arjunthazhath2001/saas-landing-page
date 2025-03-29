@@ -17,4 +17,8 @@
   @apply text-black bg-transparent;
 }
 
+.logo-ticker{
+  @apply h-8 w-auto;
+}
+
 }
