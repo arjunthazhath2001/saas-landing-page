@@ -7,10 +7,10 @@ import apexLogo from '@/assets/logo-apex.png'
 import Image from 'next/image'
 
 export const LogoTicker = ()=>{
-    return <section>
+    return <section className='py-8 md:py-12'>
 
         <div className='container'>
-
+            <div className='flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]'>
             <div className='flex gap-14'>
                 <Image src={acmeLogo} alt="Acme" className='logo-ticker'/>
                 <Image src={quantumLogo} alt="Quantum" className='logo-ticker'/>
@@ -19,6 +19,7 @@ export const LogoTicker = ()=>{
                 <Image src={pulseLogo} alt="Pulse" className='logo-ticker'/>
                 <Image src={apexLogo} alt="Apex" className='logo-ticker'/>
 
+            </div>
             </div>
 
         </div>
