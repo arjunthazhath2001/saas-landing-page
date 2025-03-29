@@ -76,8 +76,8 @@ export const Pricing = () => {
               popular,
               inverse,
               features,
-            }) => (
-              <div className={twMerge("p-10 rounded-3xl shadow-[0_2px_3px_gray] max-w-xs w-full", inverse===true && 'border-black bg-black text-white')}>
+            }, index) => (
+              <div key={index} className={twMerge("p-10 rounded-3xl shadow-[0_2px_3px_gray] max-w-xs w-full", inverse===true && 'border-black bg-black text-white')}>
                 <div className="flex justify-between">
                   
                   <h3 className={twMerge("text-lg font-bold text-black/50", inverse===true && 'text-white/50')}>{title}</h3>
@@ -103,8 +103,8 @@ export const Pricing = () => {
                   {buttonText}
                 </button>
                 <ul className="flex flex-col gap-5 mt-[30px]">
-                  {features.map((feature) => (
-                    <li className="text-sm items-center flex gap-4">
+                  {features.map((feature,index) => (
+                    <li key={index} className="text-sm items-center flex gap-4">
                       <CheckIcon className="w-5" />
                       <span>{feature}</span>
                     </li>
