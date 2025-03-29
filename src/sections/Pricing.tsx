@@ -77,9 +77,10 @@ export const Pricing = () => {
               inverse,
               features,
             }) => (
-              <div className={twMerge("p-10 border-4 border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA]", inverse===true && 'border-black bg-black text-white/60')}>
+              <div className={twMerge("p-10 border-4 border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA]", inverse===true && 'border-black bg-black text-white')}>
                 <div className="flex justify-between">
-                  <h3 className="text-lg font-bold text-black/50">{title}</h3>
+                  
+                  <h3 className={twMerge("text-lg font-bold text-black/50", inverse===true && 'text-white/50')}>{title}</h3>
 
                   {popular===true && (
                     <div className="inline-flex text-sm py-1.5 px-4 rounded-xl border border-white/20">
@@ -94,8 +95,7 @@ export const Pricing = () => {
                   <span className="text-4xl font-bold tracking-tighter leading-none">
                     ${monthlyPrice}
                   </span>
-                  <span className="tracking-tight font-bold text-black/50">
-                    {" "}
+                  <span className={twMerge("tracking-tight font-bold text-black/50", inverse===true && 'text-white/50')}>
                     /month
                   </span>
                 </div>
